@@ -12,7 +12,7 @@ var css = fs.readFileSync('./public/style.css');
 var js = fs.readFileSync('./public/index.js');
 var Page404 = fs.readFileSync('./public/404.html');
 
-console.log("testes");
+console.log("ts");
 
 var server = http.createServer(function(req,resp){
     if(req.url == '/index.html' || req.url == '/' || req.url == '/public/index.html'){
@@ -40,8 +40,7 @@ var server = http.createServer(function(req,resp){
 
 });
 
-//var ip = process.env.IP || "192.168.100.4";
+// Specifying Ip doesn't work
+//var ip =  "192.168.100.4";
 var port = 3000;
 server.listen(port);
-
-//It didn't like it when I tried to specify an IP address.
